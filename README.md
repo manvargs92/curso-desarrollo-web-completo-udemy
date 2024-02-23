@@ -6,3 +6,6 @@ Curso: Desarrollo Web Completo visto en Udemy
 
 **Webs y herramientas usadas:**
 https://www.lipsum.com/
+https://tablericons.com/
+https://heroicons.com/
+https://fontawesome.com/
