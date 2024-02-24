@@ -7,12 +7,12 @@ body {
 }
 /***********************************************************************/
 
-h1 {
+.titulo { /* . selecciona una clase puesta a una etiqueta html, las clases son reutilizables, lis id deben ser únicos */
     text-align: center;
     font-size: 3.8rem;
 }
 
-span {
+.titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
     /*font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px*/
     font-size: 2rem;
 }
