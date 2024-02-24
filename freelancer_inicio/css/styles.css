@@ -1,3 +1,11 @@
+:root { /* : pseudo selectores, no hacen referencia como tal a una etiqueta html */
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
 /*** Hack para poder utilizar la medida rem de forma mucho mas facil ***/
 html {
     font-size: 62.5%;
@@ -10,6 +18,7 @@ body {
 .titulo { /* . selecciona una clase puesta a una etiqueta html, las clases son reutilizables, lis id deben ser únicos */
     text-align: center;
     font-size: 3.8rem;
+    color: var(--primario)
 }
 
 .titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
