@@ -19,11 +19,31 @@ body {
 .titulo { /* . selecciona una clase puesta a una etiqueta html, las clases son reutilizables, lis id deben ser únicos */
     text-align: center;
     font-size: 3.8rem;
-    color: var(--primario);
+    color: var(--oscuro);
     /* font-family: Arial, Helvetica, sans-serif; /* la primera fuente que tenga el navegador */
 }
 
 .titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
     /*font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px*/
     font-size: 2rem;
+}
+
+.contenedor {
+    width: 120rem;
+ /*   margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    margin: 0 auto 0 auto; /* top right bottom left*/
+
+    margin: 0 auto; /* si solo hay dos valores: arriba/abajo izquierda/derecha */
+}
+
+.nav-background{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    
 }
