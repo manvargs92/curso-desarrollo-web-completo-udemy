@@ -10,3 +10,4 @@ https://tablericons.com/
 https://heroicons.com/
 https://fontawesome.com/
 https://fonts.google.com/
+https://necolas.github.io/normalize.css/
