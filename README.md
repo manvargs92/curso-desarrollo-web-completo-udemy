@@ -9,3 +9,4 @@ https://www.lipsum.com/
 https://tablericons.com/
 https://heroicons.com/
 https://fontawesome.com/
+https://fonts.google.com/

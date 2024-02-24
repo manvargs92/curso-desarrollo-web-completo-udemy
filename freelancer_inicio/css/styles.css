@@ -12,13 +12,15 @@ html {
 }
 body {
     font-size: 16px; /* 1rem = 10px */
+    font-family: "Krub", sans-serif;
 }
 /***********************************************************************/
 
 .titulo { /* . selecciona una clase puesta a una etiqueta html, las clases son reutilizables, lis id deben ser únicos */
     text-align: center;
     font-size: 3.8rem;
-    color: var(--primario)
+    color: var(--primario);
+    /* font-family: Arial, Helvetica, sans-serif; /* la primera fuente que tenga el navegador */
 }
 
 .titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
