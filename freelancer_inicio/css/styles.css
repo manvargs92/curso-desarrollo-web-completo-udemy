@@ -45,7 +45,6 @@ body {
 }
 
 .navegacion-principal {
-    padding: 1rem; /* si solo hay un valor: arriba/abajo/izquierda/derecha */
     display: flex; /* block: los elementos irán uno de bajo del otro; inline: los elementos irán uno al lado del otro; flex: hbilita flexbox y su propiedades*/
     /* flex-direction: column;
     align-items: center; */
@@ -55,4 +54,12 @@ body {
 .navegacion-principal a {
     color: var(--blanco);
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700; /* 700 = bold*/
+    padding: 1rem; /* si solo hay un valor: arriba/abajo/izquierda/derecha */
+}
+
+.navegacion-principal a:hover { /* :hover pseudoclase para insertar efectos */
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
