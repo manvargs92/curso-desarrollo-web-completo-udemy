@@ -45,5 +45,10 @@ body {
 }
 
 .navegacion-principal {
-    
+    padding: 1rem; /* si solo hay un valor: arriba/abajo/izquierda/derecha */
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
 }
