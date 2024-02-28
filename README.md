@@ -11,3 +11,4 @@ https://heroicons.com/
 https://fontawesome.com/
 https://fonts.google.com/
 https://necolas.github.io/normalize.css/
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
