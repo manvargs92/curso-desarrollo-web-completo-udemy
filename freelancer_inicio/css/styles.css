@@ -74,6 +74,12 @@ body {
     color: var(--oscuro);
 }
 
+.hero {
+    background-image: url(../images/hero.jpg); /* añadir una imágen como fondo*/
+    background-repeat: no-repeat; /* evita que se repita laimagen en el espacio que quede vacío*/
+    background-size: cover; /* ajusta la imagen para que abarque todo el espacio y no quede espacio vacío*/
+}
+
 /* Media queries estándard
 480px para smartphones
 768px para tablets
