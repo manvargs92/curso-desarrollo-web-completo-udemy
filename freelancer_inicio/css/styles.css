@@ -25,19 +25,30 @@ body {
 }
 /***********************************************************************/
 
-.titulo { /* . selecciona una clase puesta a una etiqueta html, las clases son reutilizables, lis id deben ser únicos */
-    text-align: center;
+/* sistema para latipografía */
+h1 {
     font-size: 3.8rem;
-    color: var(--oscuro);
-    /* font-family: Arial, Helvetica, sans-serif; /* la primera fuente que tenga el navegador */
 }
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+/****************************/
 
 .titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
     /*font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px*/
     font-size: 2rem;
 }
 
-.contenedor {
+.contenedor { /* . selecciona una clase puesta a una etiqueta html, las clases son reutilizables, las id deben ser únicos */
     max-width: 120rem;
     /* width: 120rem; se cambió para evitar el scroll horizontal al reducir la resolución del navegador */
  /*   margin-top: 0;
@@ -97,7 +108,21 @@ body {
     background-color: rgb(0 0 0 / 70%);
     width: 100%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+ .contenido-hero h2,
+ .contenido-hero p {
+    color: var(--blanco);
+ }
+
+ .ubicacion {
+    display: flex;
+    align-items: flex-end;
+ }
 
 /* Media queries estándard
 480px para smartphones
