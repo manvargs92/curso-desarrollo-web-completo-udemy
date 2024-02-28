@@ -9,7 +9,16 @@
 /*** Hack para poder utilizar la medida rem de forma mucho mas facil ***/
 html {
     font-size: 62.5%;
+/* sippet para deshacernos del boxmodel */
+    box-sizing: border-box;
+/****************************************/
 }
+/* sippet para deshacernos del boxmodel */
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+/****************************************/
+  
 body {
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", sans-serif;
