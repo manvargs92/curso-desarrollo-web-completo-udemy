@@ -60,6 +60,14 @@ body {
     }
 }
 
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color: var(--blanco);
+    border-radius: 1rem;
+}
+
 /* Tipografía */
 /* sistema para la tipografía */
 h1 {
