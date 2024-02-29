@@ -166,7 +166,34 @@ h1, h2, h3 {
         grid-template-columns: 1fr 1fr 1fr; /* forma corta de dividir las fracciones */
         /* grid-template-columns: repeat(3, 1fr);*//* otra forma de repetir la fracciones, equivale a 1f 1fr 1fr*/
         /* grid: 200px 800px / 300px 300px; *//* forma corta de grid-template, (filas / columnas)*/
+        column-gap: 1rem;
     }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: 400; /* 400 = Normal */
+}
+
+.servicio p {
+    line-height: 2; /* interlineado */
+    text-align: center;
+}
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Media queries estándard
