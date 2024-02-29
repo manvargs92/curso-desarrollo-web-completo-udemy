@@ -14,7 +14,17 @@ html {
 /* sippet para deshacernos del boxmodel */
     box-sizing: border-box;
 /****************************************/
+    scroll-snap-type: y mandatory;
 }
+
+/* Scroll snap */
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 /* snippet para deshacernos del boxmodel */
 *, *:before, *:after {
     box-sizing: inherit;
