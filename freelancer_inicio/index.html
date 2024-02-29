@@ -103,41 +103,43 @@
                 <p>Maecenas maximus mi velit, vel scelerisque quam luctus a. Suspendisse velit lacus, maximus eu risus eget, finibus vestibulum massa.</p>
             </section>
         </div> <!-- .servicios -->
+        
+        <section>
+            <h2>Contacto</h2>
+            
+            <form class="formulario"><!-- form indica que es un formulario -->
+                <fieldset><!-- grupo de campos -->
+                    <legend>Contáctame llenando todos los campos</legend><!-- para describir de qué se trata el formulario-->
+                    
+                    <div class="contenedor-campos">
+                        <div class="campo"><!-- se usa cuando no se puede usar otra etiqueta, en este caso para ordenar los campos de arriba hacia a abajo -->
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input type="tel" placeholder="Tu teléfono">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input type="email" placeholder="Tu email">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea></textarea>
+                        </div>
+                    </div><!-- .contenedor-campos -->
+                    
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
-
-    <section>
-        <h2>Contacto</h2>
-
-        <form><!-- indica que es un formulario -->
-            <fieldset><!-- grupo de campos -->
-                <legend>Contáctame llenando todos los campos</legend><!-- para describir de qué se trata el formulario-->
-
-                <div><!-- se usa cuando no se puede usar otra etiqueta, en este caso para ordenar los campos de arriba hacia a abajo -->
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Tu nombre">
-                </div>
-
-                <div>
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="Tu teléfono">
-                </div>
-
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Tu email">
-                </div>
-
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
-        </form>
-    </section>
 
     <footer>
         <p>Todos los derechos reservados. Manuel Vargas Freelancer.</p>

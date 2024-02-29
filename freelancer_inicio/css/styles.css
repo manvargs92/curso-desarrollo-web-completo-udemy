@@ -196,6 +196,28 @@ h1, h2, h3 {
     align-items: center;
 }
 
+/* Contacto */
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* min utilizar el valor mas pequeño de entre los dos valores que le asignes*/
+    margin: 0 auto; /* para centrar horizontalmente un elemento cuyo padre NO es un display flex */
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
 /* Media queries estándard
 480px para smartphones
 768px para tablets
