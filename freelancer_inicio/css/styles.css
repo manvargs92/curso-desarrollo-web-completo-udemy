@@ -53,11 +53,16 @@ body {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 @media (min-width: 768px) {
     .boton {
         width: auto; /* auto para que se reinicie el tamaño */
     }
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 .sombra {
@@ -91,6 +96,24 @@ h1, h2, h3 {
 .titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
     /*font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px*/
     font-size: 2rem;
+}
+
+/* Utilidades */
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
 }
 
 /* Navegación principal */
@@ -216,6 +239,33 @@ h1, h2, h3 {
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--primario);
+}
+
+.contenedor-campos {
+
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block; /* cada label tomará todo el espacio disponible */
+}
+
+/* .campo input[type="text"] *//* { [type=""] selector específico de un elemento */
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton {
+    width: 100%;
 }
 
 /* Media queries estándard
