@@ -6,6 +6,7 @@
     --gris: #757575;
 }
 
+/* Globales */
 /*** Hack para poder utilizar la medida rem de forma mucho mas facil ***/
 html {
     font-size: 62.5%;
@@ -13,7 +14,7 @@ html {
     box-sizing: border-box;
 /****************************************/
 }
-/* sippet para deshacernos del boxmodel */
+/* snippet para deshacernos del boxmodel */
 *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -24,29 +25,6 @@ body {
     font-family: "Krub", sans-serif;
 }
 /***********************************************************************/
-
-/* sistema para latipografía */
-h1 {
-    font-size: 3.8rem;
-}
-
-h2 {
-    font-size: 2.8rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-h1, h2, h3 {
-    text-align: center;
-}
-/****************************/
-
-.titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
-    /*font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px*/
-    font-size: 2rem;
-}
 
 .contenedor { /* . selecciona una clase puesta a una etiqueta html, las clases son reutilizables, las id deben ser únicos */
     max-width: 120rem;
@@ -80,6 +58,32 @@ h1, h2, h3 {
     }
 }
 
+/* Tipografía */
+/* sistema para la tipografía */
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+/****************************/
+
+/* Títulos */
+.titulo span { /* aplica las reglas a una etiqueta que se encuentra dentro de otra */
+    /*font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px*/
+    font-size: 2rem;
+}
+
+/* Navegación principal */
 .nav-background{
     background-color: var(--secundario);
 }
@@ -113,6 +117,7 @@ h1, h2, h3 {
     color: var(--oscuro);
 }
 
+/* Hero */
 .hero {
     background-image: url(../images/hero.jpg); /* añadir una imágen como fondo*/
     background-repeat: no-repeat; /* evita que se repita laimagen en el espacio que quede vacío*/
@@ -138,7 +143,7 @@ h1, h2, h3 {
     color: var(--blanco);
  }
 
- .ubicacion {
+.contenido-hero .ubicacion {
     display: flex;
     align-items: flex-end;
  }
