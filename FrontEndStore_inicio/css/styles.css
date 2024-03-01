@@ -98,12 +98,46 @@ h3 {
     color: var(--secundario);
 }
 
+/*** Grid ***/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* column-gap: 2rem;
+    row-gap: 2rem; */
+    gap: 2rem; /* aplica column-gap y row-gap */
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /*** Productos ***/
-.producto {}
-.producto__imagen {}
-.producto__informacion {}
-.producto__nombre {}
-.producto__precio {}
+.producto {
+    background-color: var(--primarioOcuro);
+    padding: 1rem;
+}
+
+.producto__imagen {
+    width: 100%;
+}
+
+.producto__nombre {
+    font-size: 4rem;
+}
+
+.producto__precio {
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+
+.producto__nombre,
+.producto__precio {
+    font-family: var(--fuente-principal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
 
 
 /*** Footer ***/
