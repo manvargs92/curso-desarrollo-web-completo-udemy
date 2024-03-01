@@ -8,3 +8,57 @@
 
     --fuente-principal: "Staatliches", sans-serif;
 }
+
+html {
+    /* font-size: 62.5%; *//* hack para los rem, al principio no lo agregó, no sé si lo va a poner en un video más adelante */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales ***/
+body {
+    /* font-size: 16px; *//* hack para los rem, al principio no lo agregó, no sé si lo va a poner en un video más adelante */
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5; /* interlineado, 1.5 de la base de la fuente, no px */
+}
+
+p {
+    font-size: 1.8rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuente-principal);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
