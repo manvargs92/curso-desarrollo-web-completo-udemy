@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
     <header class="header">
         <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="Logotipo"><!-- alt texto alternativo, ayuda también en el posicionamiento del sitio web -->
+            <img class="header__logo" src="img/logo.png"
+                alt="Logotipo"><!-- alt texto alternativo, ayuda también en el posicionamiento del sitio web -->
         </a>
     </header>
 
@@ -24,7 +27,31 @@
     </nav>
 
     <main class="contenedor">
-        <h1>Producto</h1>
+        <h1>ReactJS</h1>
+
+        <div class="camiseta">
+            <img src="img/3.jpg" alt="Imagen del producto" class="camiseta__imagen">
+
+            <div class="camiseta__contenido">
+                <p>
+                    Aenean nulla tortor, dignissim vitae efficitur eu, eleifend a dui. In sem neque, maximus et aliquam
+                    nec, molestie et nisi. Curabitur ac massa sed enim pulvinar vestibulum. In sem neque, maximus et
+                    aliquam nec, molestie et nisi.
+                </p>
+
+                <form class="formulario">
+                    <select>
+                        <option disabled selected>-- Seleccionar talla --</option><!-- disabled: inhabilita ser seleccionado; selected: se muestra por defecto -->
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input type="number" placeholder="Cantidad" min="1" step="10"><!-- min: cantidad mínima; step: saltos de n en n cantidad -->
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--.camiseta__contenido-->
+
+        </div><!--.camiseta-->
     </main>
 
     <footer class="footer">
@@ -32,4 +59,5 @@
     </footer>
 
 </body>
+
 </html>
