@@ -39,3 +39,19 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: flex;/* activa flexbox; con solo activarse, ya cambia el diseño en comparación a css grid; el control de cuántas columnas tendrá está en el html */
+        /* gap: 2rem; *//* forma actual de añadir separación entre elementos de flexbox*/
+
+/***************************************************************************************************************/
+/* forma antigua de añadir una separación entre elementos de flexbox, ahora se usa gap */
+        justify-content: space-between;/* justify-content permite alinear elementos de izq a der */
+    }
+
+.entrada-blog {
+    flex-basis: calc(50% - 1rem);
+}
+/**************************************************************************************************************/
+}
