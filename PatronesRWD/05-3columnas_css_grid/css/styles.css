@@ -49,3 +49,28 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .contenedor-grid {
+        display: grid;
+
+        grid-template-areas: "izquierda contenido derecha";/* posicionar el contenido de forma fácil con grid-area */
+        
+        /* grid-template-columns: 20% 60% 20%; */
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 2rem;
+        grid-auto-flow: column;/* para que grid acomode automáticamente en columnas el contenido */
+    }
+}
+
+.contenido-principal {
+    grid-column: 2 / 3;
+
+    grid-area: contenido;/* posicionar el contenido con grid-template-areas */
+}
+
+.sidebar-1 {
+    grid-column: 1 / 2;
+
+    grid-area: izquierda;/* posicionar el contenido con grid-template-areas */
+}
