@@ -39,3 +39,17 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: grid; /* habilita el css grid */
+/***************************************************************************************************/
+/* las siguientes propiedades aplican el mismo efecto, solo son distintas formas de hacer lo mismo */
+        grid-template-columns: 50% 50%; /* los porcentajes casi no se usan en grid, es mejor usar la unidad fr */
+        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+/**************************************************************************************************/
+        column-gap: 2rem;
+    }
+}
