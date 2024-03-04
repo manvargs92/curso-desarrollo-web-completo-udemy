@@ -49,3 +49,19 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        /* justify-content: space-between; *//* no es necesario en este caso porque no se usa el flex: 0 0 calc() */
+        gap: 2rem;
+    }
+
+    aside {
+        flex: 1;/* factor de crecimiento */
+    }
+
+    article {
+        flex: 3;/* factor de crecimiento */
+    }
+}
