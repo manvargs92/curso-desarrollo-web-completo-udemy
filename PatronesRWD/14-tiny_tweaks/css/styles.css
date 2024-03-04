@@ -50,3 +50,16 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+/* Mostly fluid el contenido solo fluye sobre el espacio que hay disponible; el tamaño de los márgenes varía */
+.contenedor {
+    max-width: 120rem;/* tope máximo */
+    /* width: 1200px; *//* no se recomienda poner un width fijo con px o rem, debe ser en porcentajes */
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    /*width: 100%;*//* hace a las imágenes responsivas */
+    width: 100%;/* las imágenes son respondivas pero si son muy pequeñas no las forza a crecer y tomar el 100% */
+}
