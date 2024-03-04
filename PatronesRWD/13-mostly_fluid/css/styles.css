@@ -37,3 +37,15 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+/* Tiny Tweaks son pequeños ajustes en ciertos elementos; no cambia tan drásticamente el diseño */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 6rem;
+        text-align: left;
+    }
+}
