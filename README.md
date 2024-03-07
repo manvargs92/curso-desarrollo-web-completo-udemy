@@ -16,3 +16,5 @@ https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 https://www.cssmatic.com/
 https://caniuse.com/
 https://modernizr.com/download?setclasses&q=webp
+https://www.netlify.com/
+Lighthouse - extensión para Chrome; sirve para auditar sitios web.
