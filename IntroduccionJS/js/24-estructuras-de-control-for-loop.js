@@ -26,4 +26,39 @@ for (let i = 0; i < carrito.length; i++) {
 }
 
 // WHILE LOOP
+
+let indice = 0;
+
+while (indice < 10) {
+    console.log(indice);
+
+    indice++;
+}
+
+indice = 1;
+
+while (indice <= 100) {
+    if (indice % 2 == 0) {
+        console.log(`El número ${indice} es par.`);
+    }
+
+    indice++;
+}
+
+indice = 0;
+
+while (indice < carrito.length) {
+    console.log(carrito[indice].nombre);
+
+    indice++;
+}
+
 // DO WHILE LOOP
+
+let i = 100;
+
+do {
+    console.log(i);
+
+    i++;
+} while (i < 10);
