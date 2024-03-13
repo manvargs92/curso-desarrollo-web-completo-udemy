@@ -5,15 +5,31 @@ function descargarNuevosClientes() {
         console.log("Descargando clientes... espere...");
         setTimeout(() => {
             resolve("Los clientes fueron descargados.")
-        }, 10000);
+        }, 5000);
+    });
+}
+
+function descargarUltimosPedidos() {
+    return new Promise(resolve => {
+        console.log("Descargando pedidos... espere...");
+        setTimeout(() => {
+            resolve("Los pedidos fueron descargados.")
+        }, 3000);
     });
 }
 
 
 async function app() {
     try {
-        const resultado = await descargarNuevosClientes();
+        // const clientes = await descargarNuevosClientes();
+        // const pedidos = await descargarUltimosPedidos();
+        // console.log(clientes);
+        // console.log(pedidos);
+
+        const resultado = await Promise.all([descargarNuevosClientes(), descargarUltimosPedidos()]);
         console.log(resultado);
+        console.log(resultado[0]);
+        console.log(resultado[1]);
     } catch (error) {
         console.log(error);
     }
@@ -27,6 +43,6 @@ console.log("Éste código no se bloquea");
 //     console.log("Set Timeout...");   
 // }, 5000);
 
-setInterval(function () {
-    console.log("Set Interval...");   
-}, 3000);
+// setInterval(function () {
+//     console.log("Set Interval...");   
+// }, 3000);
