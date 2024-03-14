@@ -87,3 +87,45 @@ btnEnviar.addEventListener("click", function (evento) {
     evento.preventDefault(); // evita que se recargue la ventana al hacer click en el botón Enviar
     console.log("Enviar formulario...");
 });
+
+
+// Eventos de los inputs y textarea
+
+const datos = {
+    nombre: "",
+    email: "",
+    mensaje: ""
+}
+
+const nombre = document.querySelector("#nombre");
+const email = document.querySelector("#email");
+const mensaje = document.querySelector("#mensaje");
+
+// nombre.addEventListener("change", function () { // valida que se haya escrito algo
+//     console.log("Escribiendo....");
+// });
+
+// nombre.addEventListener("input", function (evento) { // input - valida que se esté escribiendo en tiempo real
+//     console.log(evento.target.value);
+//     console.log("Escribiendo en tiempo real....");
+// });
+
+// email.addEventListener("input", function (evento) {
+//     console.log(evento.target.value);
+// });
+
+// mensaje.addEventListener("input", function (evento) {
+//     console.log(evento.target.value);
+// });
+
+nombre.addEventListener("input", leerTexto);
+email.addEventListener("input", leerTexto);
+mensaje.addEventListener("input", leerTexto);
+
+function leerTexto(evento) {
+    console.log(evento.target.value);
+
+    datos[evento.target.id] = evento.target.value;
+
+    console.log(datos);
+}
