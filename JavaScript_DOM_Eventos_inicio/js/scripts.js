@@ -72,6 +72,18 @@ function imprimir() {
 }
 
 
-window.onscroll = function () {
+window.onscroll = function (evento) {
+    console.log(evento);
     console.log("Haciendo scroll...");
 }
+
+
+// Seleccionar elementos y asociarles un evento
+
+const btnEnviar = document.querySelector(".boton--primario");
+
+btnEnviar.addEventListener("click", function (evento) {
+    console.log(evento);
+    evento.preventDefault(); // evita que se recargue la ventana al hacer click en el botón Enviar
+    console.log("Enviar formulario...");
+});
