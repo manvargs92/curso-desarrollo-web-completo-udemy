@@ -22,3 +22,6 @@ enlaces[0].classList.remove("navegacion__enlace"); // remover una clase a la eti
 
 
 // getElementById
+// esta forma y no se utiliza tanto en las nuevas versiones de JS
+const heading2 = document.getElementById("heading");
+console.log(heading2);
