@@ -45,3 +45,33 @@ const nevegacion = document.querySelector(".navegacion");
 nevegacion.appendChild(nuevoEnlace);
 
 console.log(nuevoEnlace);
+
+
+// Eventos en JS
+
+console.log(1);
+
+// escuchar un evento ocurra
+window.addEventListener("load", function () { // load espera a que el JS, el HTML y todos los archivos esté completamente cargados
+    console.log(2);
+});
+// window.addEventListener("load", imprimir); // forma sin callback
+
+window.onload = function () { // onload espera a que el JS, el HTML y todos los archivos esté completamente cargados
+    console.log(3);
+}
+
+document.addEventListener("DOMContentLoaded", function () { // DOMContentLoaded solo espera a que se descargue el HTML, pero no espera CSS o imágenes
+    console.log(4);
+})
+
+console.log(5);
+
+function imprimir() {
+    console.log(2);
+}
+
+
+window.onscroll = function () {
+    console.log("Haciendo scroll...");
+}
