@@ -137,11 +137,50 @@ formulario.addEventListener("submit", function (evento) { // submit es para form
     evento.preventDefault();
 
     // validar el formulario
+    const {nombre, email, mensaje} = datos;
+
+    if (nombre === "" || email === "" || mensaje === "") {
+        mostrarError("Aún hay campos vacíos; todos los campos son obligatorios.");
+        return; // return corta la ejecución del código
+    }
+
+    // Crear la alerta de Enviar correctamente
+    mostrarCorrecto("Formulario enviado correctamente.");
 
     // Enviar el formulario
 
     console.log("Enviando fromulario...");
 });
+
+// Muestra un error en pantalla
+function mostrarError(mensaje) {
+    const error = document.createElement("P");
+    error.textContent = mensaje;
+    error.classList.add("error");
+
+    formulario.appendChild(error);
+
+    // Desaparezca después de 5 segundos
+    setTimeout(() => {
+        error.remove(); //.remove elimina elementos HTML
+    }, 5000);
+
+    console.log(error);
+}
+
+// Muestra alerta de formulario enviado correctamente
+function mostrarCorrecto(mensaje) {
+    const correcto = document.createElement("P");
+    correcto.textContent = mensaje;
+    correcto.classList.add("correcto");
+    formulario.appendChild(correcto);
+
+    setTimeout(() => {
+        correcto.remove();
+    }, 5000);
+
+    console.log(correcto);
+}
 
 
 // Organización del código
