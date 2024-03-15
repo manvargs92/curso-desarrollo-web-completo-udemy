@@ -80,13 +80,13 @@ window.onscroll = function (evento) {
 
 // Seleccionar elementos y asociarles un evento
 
-const btnEnviar = document.querySelector(".boton--primario");
+// const btnEnviar = document.querySelector(".boton--primario");
 
-btnEnviar.addEventListener("click", function (evento) {
-    console.log(evento);
-    evento.preventDefault(); // evita que se recargue la ventana al hacer click en el botón Enviar
-    console.log("Enviar formulario...");
-});
+// btnEnviar.addEventListener("click", function (evento) {
+//     console.log(evento);
+//     evento.preventDefault(); // evita que se recargue la ventana al hacer click en el botón Enviar
+//     console.log("Enviar formulario...");
+// });
 
 
 // Eventos de los inputs y textarea
@@ -129,3 +129,22 @@ function leerTexto(evento) {
 
     console.log(datos);
 }
+
+// El evento de submit
+
+const formulario = document.querySelector(".formulario"); // si se escucha un submit debe asignarse a un formulario, NO a un botón
+formulario.addEventListener("submit", function (evento) { // submit es para formularios
+    evento.preventDefault();
+
+    // validar el formulario
+
+    // Enviar el formulario
+
+    console.log("Enviando fromulario...");
+});
+
+
+// Organización del código
+// 1. Todas las variables en la parte superior
+// 2. Después, todos los eventlisteners
+// 3. De último todas las funciones
