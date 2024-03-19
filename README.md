@@ -18,3 +18,7 @@ https://caniuse.com/
 https://modernizr.com/download?setclasses&q=webp
 https://www.netlify.com/
 Lighthouse - extensión para Chrome; sirve para auditar sitios web.
+https://nodejs.org/
+NPM
+SASS
+Gulp
