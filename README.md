@@ -28,3 +28,5 @@ npm init - inicia un proyecto de node creando el package.json
 npm install - instala dependencias del package.json
 npm install (dependecia) --save-dev - instala una dependencia de ambienre de desarrollo
 npm run nombre-script - corre un escript listado en package.json
+npx - ejecutar paquetes sin necesidad de isntalarlos globalmente
+npx gulp nombre-tarea - ejacuta una tarea de Gulp
