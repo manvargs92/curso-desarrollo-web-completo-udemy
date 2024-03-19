@@ -14,6 +14,7 @@
   "author": "Manuel Vargas",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^4.0.2",
     "sass": "^1.72.0"
   }
 }
