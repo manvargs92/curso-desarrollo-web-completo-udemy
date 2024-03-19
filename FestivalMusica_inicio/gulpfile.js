@@ -1,4 +1,4 @@
-const { src, dest } = require("gulp"); // extrae las funcionalidades previamente indicadas del archivo gulp de la carpeta node_modules
+const { src, dest, watch } = require("gulp"); // extrae las funcionalidades previamente indicadas del archivo gulp de la carpeta node_modules
 const sass = require("gulp-sass")(require("sass"));
 
 function css(done) {
@@ -9,4 +9,10 @@ function css(done) {
     done(); //callback que avisa a Gulp cuando llegamos al final de la función
 }
 
+function devcss(done) {
+    watch("src/scss/app.scss", css);
+    done();
+}
+
 exports.css = css;
+exports.devcss = devcss;
