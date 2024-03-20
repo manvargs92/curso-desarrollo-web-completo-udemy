@@ -1,4 +1,5 @@
+@use "../base/variables";
 
-h1 {
-    color: $rojo;
+body {
+    background-color: variables.$rojo;
 }
