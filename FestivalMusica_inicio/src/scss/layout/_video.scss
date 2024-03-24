@@ -3,6 +3,9 @@
 
 .video {
     position: relative;// encimar el verlay sobre el video
+    max-height: 70rem;
+    min-height: 50rem;
+    overflow: hidden; // evita que se vea la parte donde se corta el overlay, y fluya correctamente cuando se reescala la pantalla
 
     .overlay {
         position: absolute;// encimar el verlay sobre el video
@@ -10,10 +13,36 @@
         background: linear-gradient(270deg, rgba(165,3,255,0.5) 0%, rgba(255,0,110,0.3) 100%); 
         height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     video {
-        width: 100%;
+        width: auto;
         display: block;
+        @include m.desktop {
+            width: 100%;
+        }
+    }
+}
+
+.contenido-video {
+    z-index: 10; // selecciona en que "capa" está puesto el contenido, en este caso, con la finalidad de hacer el texto del video seleccionable (no necesario en Firefox)
+
+    h2 {
+        color: v.$blanco;
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    p {
+        background-color: v.$rosa;
+        display: inline-block; // inline-block - si hay más elementos debajo, no se coloquen del lado derecho, solamente toma el espacio que requiere
+        padding: 1rem 2rem;
+        color: v.$blanco;
+        font-weight: 700;
+        font-size: 2.4rem;
+        margin: 0;
     }
 }
