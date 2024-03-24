@@ -26,6 +26,8 @@ https://gulpjs.com/
 gulp-sass plugin
 gulp-plumber
 gulp-webp v4
+gulp-imagemin v7.1.0
+gulp-cache
 https://cssgradient.io/
 
 **Comandos NPM usados**
