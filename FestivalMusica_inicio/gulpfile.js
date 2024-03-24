@@ -1,6 +1,10 @@
-const { src, dest, watch } = require("gulp"); // extrae las funcionalidades previamente indicadas del archivo gulp de la carpeta node_modules
+const { src, dest, watch, parallel } = require("gulp"); // extrae las funcionalidades previamente indicadas del archivo gulp de la carpeta node_modules
+// CSS
 const sass = require("gulp-sass")(require("sass"));
 const plumber = require("gulp-plumber");
+
+// Imágenes
+const webp = require("gulp-webp");
 
 function css(done) {
     src("src/scss/**/*.scss") // Identificar el archivo SASS
@@ -11,10 +15,24 @@ function css(done) {
     done(); //callback que avisa a Gulp cuando llegamos al final de la función
 }
 
+function versionWebp(done) {
+    const opciones = {
+        quality: 50
+    }
+
+    src("src/img/**/*.{png, jpg}")
+        .pipe(webp(opciones))
+        .pipe(dest("build/img"));
+
+    done();
+}
+
 function devcss(done) {
     watch("src/scss/**/*.scss", css);
     done();
 }
 
 exports.css = css;
-exports.devcss = devcss;
+exports.versionWebp = versionWebp;
+// exports.devcss = devcss;
+exports.devcss = parallel(versionWebp, devcss); //series - las funciones se ejecutan una detrás de otra; parallel- las funciones se ejecutan en paralelo

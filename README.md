@@ -25,6 +25,8 @@ Gulp
 https://gulpjs.com/
 gulp-sass plugin
 gulp-plumber
+gulp-webp v4
+https://cssgradient.io/
 
 **Comandos NPM usados**
 npm init - inicia un proyecto de node creando el package.json
