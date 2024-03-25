@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -357,6 +358,10 @@ h3 {
 
 img {
   max-width: 100%;
+  /* para adaptar la recomandación de que las img deben tener width="200" height="300" en el HTML */
+  width: 100%;
+  height: auto;
+  /***********************************************************************************************/
   display: block;
 }
 

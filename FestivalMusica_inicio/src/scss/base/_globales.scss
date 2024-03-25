@@ -50,5 +50,9 @@ h3 {
 
 img {
     max-width: 100%;
+    /* para adaptar la recomandación de que las img deben tener width="200" height="300" en el HTML */
+    width: 100%;
+    height: auto;
+    /***********************************************************************************************/
     display: block;
 }
