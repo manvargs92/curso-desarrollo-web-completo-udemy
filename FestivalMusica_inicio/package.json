@@ -8,7 +8,7 @@
     "sass": "sass --watch src/scss:build/css",
     "primeraTarea": "gulp primeraTarea",
     "css": "gulp css",
-    "devcss": "gulp devcss"
+    "dev": "gulp dev"
   },
   "keywords": [
     "SASS",

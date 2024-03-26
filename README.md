@@ -39,6 +39,6 @@ npx - ejecutar paquetes sin necesidad de isntalarlos globalmente
 npx gulp nombre-tarea - ejacuta una tarea de Gulp
 
 <!-- ejecutar gulp con un watch para compilar el css en tiempo real -->
-npm run devcss
-npx gulp devcss
+npm run dev
+npx gulp dev
 <!-- ---------------------------------------------------------------- -->
