@@ -326,6 +326,9 @@ body {
 body.fijar-body {
   overflow: hidden;
 }
+body.body-scroll {
+  padding-top: 8.6rem;
+}
 
 p {
   font-size: 2rem;
@@ -373,6 +376,10 @@ img {
 }
 @media (min-width: 768px) {
   .header.fijo {
+    /* para que se coloque en el lado izq arriba para que al hacer scroll evitar salto del body */
+    left: 0;
+    top: 0;
+    /********************************************************************************************/
     position: fixed;
     width: 100%;
     box-shadow: 0.1rem 0.2rem 0.3rem #333;

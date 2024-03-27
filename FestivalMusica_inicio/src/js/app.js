@@ -12,6 +12,7 @@ function iniciarApp() {
 function navegacionFija() {
     const barra = document.querySelector(".header");
     const sobreFestival = document.querySelector(".sobre-festival");
+    const body = document.querySelector("body");
 
     /* para saber que ya se dio scroll hasta ese elemento */
     window.addEventListener("scroll", function () {
@@ -19,9 +20,11 @@ function navegacionFija() {
         if (sobreFestival.getBoundingClientRect().bottom < 0) { // es decir, ya pasé al elemento
             // console.log("Ya pasamos al elemento");
             barra.classList.add("fijo");
+            body.classList.add("body-scroll");
         } else {
             console.log("Aún no pasamos al elemento.");
             barra.classList.remove("fijo");
+            body.classList.remove("body-scroll");
         }
     });
 }

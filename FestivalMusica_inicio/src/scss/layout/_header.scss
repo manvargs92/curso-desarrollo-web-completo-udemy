@@ -6,6 +6,10 @@
 
     @include m.tablet {
         &.fijo {
+            /* para que se coloque en el lado izq arriba para que al hacer scroll evitar salto del body */
+            left: 0;
+            top: 0;
+            /********************************************************************************************/
             position: fixed; //posición: fija
             width: 100%;
             box-shadow: .1rem .2rem .3rem #333;

@@ -18,6 +18,10 @@ body {
     &.fijar-body {
         overflow: hidden; // bloquea el scroll
     }
+
+    &.body-scroll {
+        padding-top: 8.6rem; // "reserva" el espacio del nav al hacer scroll para evitar salto del body
+    }
 }
 
 p {
