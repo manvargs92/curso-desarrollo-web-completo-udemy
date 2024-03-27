@@ -5,6 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function iniciarApp() {
     crearGaleria();
+    scrollNav();
+}
+
+function scrollNav() {
+    const enlaces = document.querySelectorAll(".navegacion-principal a");
+    // enlaces.addEventListener("click", function () {}); // marcará error si se asigna an un querySelectorAll
+    enlaces.forEach(function (enlace) {
+        enlace.addEventListener("click", function (evento) {
+            console.log(evento.target.attributes.href.value);// target es a lo que le hemos dado click
+            evento.preventDefault();
+
+            const seccionScroll = evento.target.attributes.href.value;
+            const seccion = document.querySelector(seccionScroll);
+
+            seccion.scrollIntoView({ behavior: "smooth" });
+        });
+    });
 }
 
 function crearGaleria() {
