@@ -2,6 +2,9 @@ const { src, dest, watch, parallel } = require("gulp"); // extrae las funcionali
 // CSS
 const sass = require("gulp-sass")(require("sass"));
 const plumber = require("gulp-plumber");
+const autoprefixer = require("autoprefixer"); // se asegura de que el CSS funcione en el navegador que se le indique
+const cssnano = require("cssnano"); // comprimir el código de CSS
+const postcss = require("gulp-postcss"); // trabaja con autoprefixer y cssnano
 
 // Imágenes
 const cache = require("gulp-cache");
@@ -13,6 +16,7 @@ function css(done) {
     src("src/scss/**/*.scss") // Identificar el archivo SASS
         .pipe(plumber())
         .pipe(sass()) // Compilar el archivo; pipe - una acción que se realiza después de otra
+        .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest("build/css")); // Almacenar el archivo compilado en el disco duro
 
     done(); //callback que avisa a Gulp cuando llegamos al final de la función

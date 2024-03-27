@@ -29,6 +29,10 @@ gulp-webp v4
 gulp-imagemin v7.1.0
 gulp-cache
 https://cssgradient.io/
+cssnano
+autoprefixer
+postcss
+gulp-postcss
 
 **Comandos NPM usados**
 npm init - inicia un proyecto de node creando el package.json
