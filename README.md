@@ -33,6 +33,7 @@ cssnano
 autoprefixer
 postcss
 gulp-postcss
+gulp-sourcemaps
 
 **Comandos NPM usados**
 npm init - inicia un proyecto de node creando el package.json
