@@ -14,11 +14,17 @@
 }
 
 .navegacion {
-    display: none;
+    // display: none; // no se pueden animar los display, por lo tanto se usará visibility
+    visibility: hidden;// en vez de display
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
 
     @include tablet {
         display: flex;
         align-items: center;
+        
+        opacity: 1;
+        visibility: visible;
     }
 
     a {
@@ -51,5 +57,14 @@
 }
 
 .mostrar {
-    display: block;
+/* Evitar que el menú se muestre de forma vertical cuando la pantalla se hace mas grande que una tablet y tiene la clase agregada ".mostrar" */
+    // display: flex;// no se pueden animar los display, por lo tanto se usará visibility
+    // flex-direction: column;
+
+    // @include tablet {
+    //     flex-direction: row;
+    // }
+/******************************************************************************************************************************************/
+    visibility: visible;// en vez de display
+    opacity: 1;
 }
