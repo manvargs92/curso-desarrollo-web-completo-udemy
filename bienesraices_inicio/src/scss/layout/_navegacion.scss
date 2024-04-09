@@ -40,10 +40,11 @@
 }
 
 .navegacion {
+    height: 0;
     // display: none; // no se pueden animar los display, por lo tanto se usará visibility
     visibility: hidden;// en vez de display
     opacity: 0;
-    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5s linear;
 
     @include tablet {
         display: flex;
@@ -91,6 +92,7 @@
     //     flex-direction: row;
     // }
 /******************************************************************************************************************************************/
+    height: auto;
     visibility: visible;// en vez de display
     opacity: 1;
 }
