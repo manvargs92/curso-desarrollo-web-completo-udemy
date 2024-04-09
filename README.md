@@ -48,3 +48,53 @@ npx gulp nombre-tarea - ejacuta una tarea de Gulp
 npm run dev
 npx gulp dev
 <!-- ---------------------------------------------------------------- -->
+
+**Otras herremientas usadas**
+Apache
+https://www.apachelounge.com/download/
+Microsoft Visual C++ Redistributable
+https://learn.microsoft.com/es-es/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
+descomprimir carpeta apache en disco C:
+modificar archivo C:\apache\conf\httpd.conf:
+Define SRVROOT "c:/apache"
+ServerName localhost
+
+lanzar servidor desde PowerShell:
+cd C:\apache\bin
+.\httpd.exe
+
+registrar apache como servicio, desde PowerShell ejecutado como Administrador:
+cd C:\apache\bin
+.\httpd.exe -k install
+
+eliminar servicio de apache - .\httpd.exe -k uinstall
+
+
+PHP
+https://www.php.net/downloads
+
+descomprimir en carpeta php en disco C:
+modificar archivo C:\apache\conf\httpd.conf:
+	LoadModule php_module "C:/php/php8apache2_4.dll"
+	AddHandler application/x-httpd-php .php
+	PHPIniDir "c:/php"
+hacer copia de archivo C:\php\php.ini-production, renombrar a php.ini, y modificar:
+	post_max_size = 20M
+	upload_max_filesize = 20M
+	extension=fileinfo
+	extension=gd
+	extension=mysqli
+agregar PHP a las variables de entorno del sistema
+
+PHP Intelephense - extensión para VSCode
+
+MySQL
+https://dev.mysql.com/downloads/mysql/
+MySQL Workbench
+https://www.mysql.com/products/workbench/
+Composer
+https://getcomposer.org/
+
+**Otros comandos usados**
+php -S localhost:3000 - iniciar el servidor de PHP, en el puerto 3000, desde la terminal (previamente instalado PHP y agregado a las variables de entorno)
