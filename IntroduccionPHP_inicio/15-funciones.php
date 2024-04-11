@@ -27,7 +27,14 @@ sumar2(10, 20); // parámetros
 
 echo "<br>";
 
+/* Parámetros nombrados */
+function restar(int $numero1, int $numero2) {
+    echo $numero1;
 
+    echo $numero2;
+}
+
+restar(numero2: 30, numero1: 10); // parámetros nombrados
 
 
 include 'includes/footer.php';
