@@ -90,20 +90,6 @@ include "./includes/templates/header.php";
         </article><!-- .entrada-blog -->
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="/bienesraices_inicio/nosotros.html">Nosotros</a>
-                <a href="/bienesraices_inicio/anuncios.html">Anuncios</a>
-                <a href="/bienesraices_inicio/blog.html">Blog</a>
-                <a href="/bienesraices_inicio/contacto.html">Contacto</a>
-            </nav>
-        </div>
-
-        <p class="copyright">Todos los derechos Reservados 2024 &copy;</p>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-    
-</body>
-</html>
+<?php
+include "./includes/templates/footer.php"
+?>
