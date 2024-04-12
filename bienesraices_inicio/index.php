@@ -1,6 +1,8 @@
 <?php
-$pagInicio = true;
-include "./includes/templates/header.php";
+require "includes/funciones.php";
+
+// include "./includes/templates/header.php";
+incluirTemplate("header", $pagInicio = true);
 ?>
 
     <main class="contenedor seccion">
@@ -71,7 +73,7 @@ include "./includes/templates/header.php";
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver Propiedad
                     </a>
                 </div><!-- .contenido-anuncio-->
@@ -104,7 +106,7 @@ include "./includes/templates/header.php";
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver Propiedad
                     </a>
                 </div><!-- .contenido-anuncio-->
@@ -137,7 +139,7 @@ include "./includes/templates/header.php";
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver Propiedad
                     </a>
                 </div><!-- .contenido-anuncio-->
@@ -145,14 +147,14 @@ include "./includes/templates/header.php";
         </div><!-- .contenedor-anuncios -->
 
         <div class="alinear-derecha">
-            <a href="anuncios.html" class="boton-verde">Ver Todas</a>
+            <a href="anuncios.php" class="boton-verde">Ver Todas</a>
         </div>
     </section><!-- .seccion .contenedor -->
 
     <section class="imagen-contacto">
         <h2>Encuentra la casa de tus sueños</h2>
         <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-        <a href="contacto.html" class="boton-amarillo">Contáctanos</a>
+        <a href="contacto.php" class="boton-amarillo">Contáctanos</a>
     </section>
 
     <div class="contenedor seccion seccion-inferior">
@@ -169,7 +171,7 @@ include "./includes/templates/header.php";
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p class="informacion-meta">Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                         <p>
@@ -190,7 +192,7 @@ include "./includes/templates/header.php";
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Guía para la decoración de tu hogar</h4>
                         <p class="informacion-meta">Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                         <p>
@@ -216,5 +218,6 @@ include "./includes/templates/header.php";
     </div>
 
 <?php
-include "./includes/templates/footer.php"
+// include "./includes/templates/footer.php";
+incluirTemplate("footer");
 ?>

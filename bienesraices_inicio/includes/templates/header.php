@@ -10,7 +10,7 @@
 
 <body>
 
-    <header class="header <?php echo isset($pagInicio) ? "inicio" : ""; ?>">
+    <header class="header <?php echo $pagInicio ? "inicio" : ""; ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
                 <!-- <a href="/"> --><!-- lleva a la página principal-->

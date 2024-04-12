@@ -85,6 +85,7 @@ hacer copia de archivo C:\php\php.ini-production, renombrar a php.ini, y modific
 	extension=fileinfo
 	extension=gd
 	extension=mysqli
+	display_errors = On
 agregar PHP a las variables de entorno del sistema
 
 PHP Intelephense - extensión para VSCode
