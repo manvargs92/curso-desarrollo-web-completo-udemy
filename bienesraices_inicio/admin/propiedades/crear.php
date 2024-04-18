@@ -11,6 +11,14 @@ $db = conectarDB();
 /* Mensajes de error */
 $errores = [];
 
+$titulo = "";
+$precio = "";
+$descripcion = "";
+$habitaciones = "";
+$banos = "";
+$estacionamiento = "";
+$vendedorId = "";
+
 /* Ejecutar el código después de que el usuario envíe el formulario */
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // echo "<pre>";
@@ -94,29 +102,29 @@ incluirTemplate("header");
                 <legend>Información General</legend>
 
                 <label for="titulo">Titulo:</label>
-                <input type="text" id="titulo" name="titulo" placeholder="Titulo Propiedad"><!-- name sirve para leer lo que el usuario escriba en el campo -->
+                <input type="text" id="titulo" name="titulo" placeholder="Titulo Propiedad" value="<?php echo $titulo ?>"><!-- name sirve para leer lo que el usuario escriba en el campo -->
 
                 <label for="precio">Precio:</label>
-                <input type="number" id="precio" name="precio" placeholder="Precio Propiedad">
+                <input type="number" id="precio" name="precio" placeholder="Precio Propiedad" value="<?php echo $precio ?>">
 
                 <label for="imagen">Imagen:</label>
                 <input type="file" id="imagen" accept="image/jpeg, image/png">
 
                 <label for="descripcion">Descripción:</label>
-                <textarea id="descripcion" name="descripcion"></textarea>
+                <textarea id="descripcion" name="descripcion"><?php echo $descripcion ?></textarea>
             </fieldset>
 
             <fieldset>
                 <legend>Información Propiedad</legend>
 
                 <label for="habitaciones">Habitaciones:</label>
-                <input type="number" id="habitaciones" name="habitaciones" placeholder="Ej: 3" min="1" max="9">
+                <input type="number" id="habitaciones" name="habitaciones" placeholder="Ej: 3" min="1" max="9" value="<?php echo $habitaciones ?>">
 
                 <label for="banos">Baños:</label>
-                <input type="number" id="banos" name="banos" placeholder="Ej: 3" min="1" max="9">
+                <input type="number" id="banos" name="banos" placeholder="Ej: 3" min="1" max="9" value="<?php echo $banos ?>">
 
                 <label for="estacionamiento">Estacionamiento:</label>
-                <input type="number" id="estacionamiento" name="estacionamiento" placeholder="Ej: 3" min="1" max="9">
+                <input type="number" id="estacionamiento" name="estacionamiento" placeholder="Ej: 3" min="1" max="9" value="<?php echo $estacionamiento ?>">
             </fieldset>
 
             <fieldset>
