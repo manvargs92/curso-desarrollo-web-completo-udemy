@@ -86,6 +86,9 @@ hacer copia de archivo C:\php\php.ini-production, renombrar a php.ini, y modific
 	extension=gd
 	extension=mysqli
 	display_errors = On
+	upload_max_filesize = 40M
+	post_max_size = 40M
+	max_execution_time = 300
 agregar PHP a las variables de entorno del sistema
 
 PHP Intelephense - extensión para VSCode
