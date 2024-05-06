@@ -24,7 +24,7 @@ $estacionamiento = "";
 $vendedorId = "";
 
 /* Ejecutar el código después de que el usuario envíe el formulario */
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información un poco más detallada del servidor
 
     /*********** Filtros ************/
     // $numero = "correo@correo.com?";
@@ -44,8 +44,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     /******************************* */
 
     // echo "<pre>";
-    // var_dump($_POST);
+    // var_dump($_POST); // devuelve información cuando enviamos una petición de tipo POST en el formulario
     // echo "</pre>";
+
+    // echo "<pre>";
+    // var_dump($_FILES); // ver el contenido de los archivos
+    // echo "</pre>";
+
+    // exit;
 
     $titulo = mysqli_real_escape_string($db, $_POST["titulo"]);
     $precio = mysqli_real_escape_string($db, $_POST["precio"]);
@@ -55,6 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $estacionamiento = mysqli_real_escape_string($db, $_POST["estacionamiento"]);
     $vendedorId = mysqli_real_escape_string($db, $_POST["vendedorId"]);
     $creado = date("Y/m/d");
+
+    // Asignar files hacia una variable
+    $imagen = $_FILES["imagen"];
+
+    // var_dump($imagen["name"]);
+
+    // exit;
 
     /* Validador de campos */
     if (!$titulo) {
@@ -78,6 +91,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!$vendedorId) {
         $errores[] = "Elige un vendedor";
     }
+
+    if ($imagen["name"]) {
+        $errores[] = "La imagen es obligatoria";
+    }
+
+    // Validar por tamaño (100 Kb máximo)
+    $medida = 1000 * 100;
+
+    if ($imagen["size"] > $medida) {
+        $errores[] = "La imagen es muy pesada";
+    }
+
     // echo "<pre>";
     // var_dump($errores);
     // echo "</pre>";
@@ -123,7 +148,7 @@ incluirTemplate("header");
         }        
         ?>
 
-        <form class="formulario" method="POST" action="/admin/propiedades/crear.php">
+        <form class="formulario" method="POST" action="/admin/propiedades/crear.php" enctype="multipart/form-data"><!-- enctype - atributo para enviar los archivos cuando el  método del formulario es POST -->
             <fieldset>
                 <legend>Información General</legend>
 
@@ -134,7 +159,7 @@ incluirTemplate("header");
                 <input type="number" id="precio" name="precio" placeholder="Precio Propiedad" value="<?php echo $precio ?>">
 
                 <label for="imagen">Imagen:</label>
-                <input type="file" id="imagen" accept="image/jpeg, image/png">
+                <input type="file" id="imagen" accept="image/jpeg, image/png" name="imagen">
 
                 <label for="descripcion">Descripción:</label>
                 <textarea id="descripcion" name="descripcion"><?php echo $descripcion ?></textarea>
