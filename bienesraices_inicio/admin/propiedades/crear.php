@@ -47,9 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información
     // var_dump($_POST); // devuelve información cuando enviamos una petición de tipo POST en el formulario
     // echo "</pre>";
 
-    // echo "<pre>";
-    // var_dump($_FILES); // ver el contenido de los archivos
-    // echo "</pre>";
+    echo "<pre>";
+    var_dump($_FILES); // ver el contenido de los archivos
+    echo "</pre>";
 
     // exit;
 
@@ -96,8 +96,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información
         $errores[] = "La imagen es obligatoria";
     }
 
-    // Validar por tamaño (100 Kb máximo)
-    $medida = 1000 * 100;
+    // Validar por tamaño (1 Mb máximo)
+    $medida = 1000 * 1000;
 
     if ($imagen["size"] > $medida) {
         $errores[] = "La imagen es muy pesada";
@@ -109,6 +109,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información
 
     /* Revisar que el arreglo de $errores esté vacío */
     if (empty($errores)) {
+
+        /* Subida de archivos */
+        // crear una carpeta
+        $carpetaImagenes = "../../imagenes";
+
+        if (!is_dir($carpetaImagenes)) { // is_dir - retorna si un directorio existe o no
+            mkdir($carpetaImagenes);
+        }
+
+        // subir la imagen
+        move_uploaded_file($imagen["tmp_name"], $carpetaImagenes . "/archivo.jpg");
+
+        exit;
 
     /* Insertar en la BD */
         $query = "INSERT INTO propiedades (titulo, precio, descripcion, habitaciones, banos, estacionamiento, creado, vendedores_id) VALUES ('$titulo', '$precio', '$descripcion', '$habitaciones', '$banos', '$estacionamiento', '$creado', '$vendedorId');";
