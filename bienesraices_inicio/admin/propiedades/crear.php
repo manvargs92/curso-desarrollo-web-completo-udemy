@@ -25,17 +25,35 @@ $vendedorId = "";
 
 /* Ejecutar el código después de que el usuario envíe el formulario */
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    /*********** Filtros ************/
+    // $numero = "correo@correo.com?";
+    // $numero2 = 1;
+
+    /* Filtros para Sanitizar */
+    // $resultado = filter_var($numero, FILTER_SANITIZE_NUMBER_INT); // filter_var - función que filtra una variable
+    // $resultado = filter_var($numero, FILTER_SANITIZE_STRING);
+    // $resultado = filter_var($numero, FILTER_SANITIZE_EMAIL);
+
+    // /* Filtros para Validar */
+    // $resultado = filter_var($numero2, FILTER_VALIDATE_INT);
+
+    // var_dump($resultado);
+
+    // exit;
+    /******************************* */
+
     // echo "<pre>";
     // var_dump($_POST);
     // echo "</pre>";
 
-    $titulo = $_POST["titulo"];
-    $precio = $_POST["precio"];
-    $descripcion = $_POST["descripcion"];
-    $habitaciones = $_POST["habitaciones"];
-    $banos = $_POST["banos"];
-    $estacionamiento = $_POST["estacionamiento"];
-    $vendedorId = $_POST["vendedorId"];
+    $titulo = mysqli_real_escape_string($db, $_POST["titulo"]);
+    $precio = mysqli_real_escape_string($db, $_POST["precio"]);
+    $descripcion = mysqli_real_escape_string($db, $_POST["descripcion"]);
+    $habitaciones = mysqli_real_escape_string($db, $_POST["habitaciones"]);
+    $banos = mysqli_real_escape_string($db, $_POST["banos"]);
+    $estacionamiento = mysqli_real_escape_string($db, $_POST["estacionamiento"]);
+    $vendedorId = mysqli_real_escape_string($db, $_POST["vendedorId"]);
     $creado = date("Y/m/d");
 
     /* Validador de campos */
