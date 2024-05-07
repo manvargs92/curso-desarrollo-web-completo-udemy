@@ -1,17 +1,17 @@
 .alerta {
     padding: 1.5rem;
     text-align: center;
-    color: #FFFFFF;
+    color: $blanco;
     font-weight: bold;
     text-transform: uppercase;
     margin: 1rem 0;
 
     &.error {
-        background-color: crimson;
+        background-color: $rojo;
     }
 
     &.exito {
-        background-color: #71B100;
+        background-color: $verde;
     }
 }
 
@@ -19,13 +19,13 @@ table.propiedades {
     margin-top: 4rem;
     width: 100%;
     border-spacing: 0;
-    background-color: #FFFFFF;
+    background-color: $blanco;
 
     thead {
-        background-color: #71B100;
+        background-color: $verde;
 
         th {
-            color: #FFFFFF;
+            color: $blanco;
             padding: 2rem;
         }
     }
@@ -33,4 +33,8 @@ table.propiedades {
     .imagen-tabla {
         width: 10rem;
     }
+}
+
+.imagen-small {
+    width: 20rem;
 }
