@@ -1,12 +1,16 @@
 .alerta {
     padding: 1.5rem;
     text-align: center;
-    color: $blanco;
+    color: #FFFFFF;
     font-weight: bold;
     text-transform: uppercase;
     margin: 1rem 0;
 
     &.error {
-        background-color: $rojo;
+        background-color: crimson;
+    }
+
+    &.exito {
+        background-color: #71B100;
     }
 }

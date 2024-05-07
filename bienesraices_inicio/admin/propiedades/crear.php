@@ -21,7 +21,8 @@ $descripcion = "";
 $habitaciones = "";
 $banos = "";
 $estacionamiento = "";
-$vendedorId = "";
+// $vendedorId = "";
+$vendedores_id = "";
 
 /* Ejecutar el código después de que el usuario envíe el formulario */
 if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información un poco más detallada del servidor
@@ -59,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información
     $habitaciones = mysqli_real_escape_string($db, $_POST["habitaciones"]);
     $banos = mysqli_real_escape_string($db, $_POST["banos"]);
     $estacionamiento = mysqli_real_escape_string($db, $_POST["estacionamiento"]);
-    $vendedorId = mysqli_real_escape_string($db, $_POST["vendedorId"]);
+    $vendedores_id = mysqli_real_escape_string($db, $_POST["vendedores_id"]);
     $creado = date("Y/m/d");
 
     // Asignar files hacia una variable
@@ -88,11 +89,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información
     if (!$estacionamiento) {
         $errores[] = "El número de lugares de estacionamiento es obligatorio";
     }
-    if (!$vendedorId) {
+    if (!$vendedores_id) {
         $errores[] = "Elige un vendedor";
     }
 
-    if ($imagen["name"]) {
+    if (!$imagen["name"]) {
         $errores[] = "La imagen es obligatoria";
     }
 
@@ -125,10 +126,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información
         // subir la imagen
         move_uploaded_file($imagen["tmp_name"], $carpetaImagenes . $nombreImagen);
 
-        exit;
+        // exit;
 
     /* Insertar en la BD */
-        $query = "INSERT INTO propiedades (titulo, precio, imagen, descripcion, habitaciones, banos, estacionamiento, creado, vendedores_id) VALUES ('$titulo', '$precio', '$nombreImagen', '$descripcion', '$habitaciones', '$banos', '$estacionamiento', '$creado', '$vendedorId');";
+        $query = "INSERT INTO propiedades (titulo, precio, imagen, descripcion, habitaciones, banos, estacionamiento, creado, vendedores_id) VALUES ('$titulo', '$precio', '$nombreImagen', '$descripcion', '$habitaciones', '$banos', '$estacionamiento', '$creado', '$vendedores_id');";
         // echo $query;
     
         $resultado = mysqli_query($db, $query);
@@ -137,7 +138,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // $_SERVER - devuelve información
             // echo "Insertado correctamente.";
 
             /* Redireccionar al usuario */
-            header("Location: /admin");
+            // header("Location: /admin?mensaje=Registrado Correctamente&registrado=1"); // ? enviar datos por medio de la url
+            header("Location: /admin?resultado=1"); // ? enviar datos por medio de la url
         }
 
     }
@@ -198,12 +200,12 @@ incluirTemplate("header");
             <fieldset>
                 <legend>Vendedor</legend>
 
-                <select name="vendedorId">
+                <select name="vendedores_id">
                     <option value="" disabled selected>-- Seleccione un vendedor --</option>
                     <!-- <option value="1">Juan</option>
                     <option value="2">Karen</option> -->
                     <?php while ($vendedor = mysqli_fetch_assoc($resultado)) : ?>
-                        <option <?php echo $vendedorId === $vendedor["id"] ? "selected" : ""; ?> value="<?php echo $vendedor["id"] ?>"><?php echo $vendedor["nombre"] . " " . $vendedor["apellido"]; ?></option>
+                        <option <?php echo $vendedores_id === $vendedor["id"] ? "selected" : ""; ?> value="<?php echo $vendedor["id"] ?>"><?php echo $vendedor["nombre"] . " " . $vendedor["apellido"]; ?></option>
                     <?php endwhile; ?>
                 </select>
             </fieldset>
