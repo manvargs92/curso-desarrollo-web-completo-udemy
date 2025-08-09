@@ -106,6 +106,35 @@
 
     <section>
         <h2>Contacto</h2>
+
+        <form><!-- todo lo que esté dentro de la etiqueta pertenece a un formulario -->
+            <fieldset><!-- define un grupo de campos del formulario -->
+                <legend>Contáctame llenando todos los campos</legend><!-- para describir de qué se trata el formulario-->
+
+                <div><!-- para agrupar, sirve cuando no se pueda usar otra etiqueta de agrupación -->
+                    <label>Nombre</label><!-- indica que debe de ir en el campo -->
+                    <input type="text" placeholder="Tu nombre"><!-- campo de tipo texto -->
+                </div>
+
+                <div><!-- para agrupar, sirve cuando no se pueda usar otra etiqueta de agrupación -->
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Tu teléfono"><!-- campo de tipo teléfono-->
+                </div>
+
+                <div><!-- para agrupar, sirve cuando no se pueda usar otra etiqueta de agrupación -->
+                    <label>Email</label>
+                    <input type="email" placeholder="Tu email"><!-- campo de tipo email -->
+                </div>
+
+                <div><!-- para agrupar, sirve cuando no se pueda usar otra etiqueta de agrupación -->
+                    <label>Mensaje</label>
+                    <textarea></textarea><!-- campo área de texto -->
+                </div>
+
+                <input type="submit" value="Enviar"><!-- campo de tipo botón enviar información-->
+            </fieldset>
+
+        </form>
     </section>
 
     <p>Todos los derechos reservados. Manuel Vargas Freelancer.</p>
