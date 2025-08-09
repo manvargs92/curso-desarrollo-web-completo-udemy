@@ -10,8 +10,12 @@ Curso: Desarrollo Web Completo visto en Udemy
 
 ## Notas
 - Algunas etiquetas html apertura y cierre y otras no tienen cierre
-- Las etiquetas <h1>, <h2>, etc, indican al navegador el contenido más importante de la página web, usualmente el logo o el nombre del sitio web
-- Solo debe de haber una etiqueta <h1> por cada página (archivo html) del sitio web
+- Las etiquetas h1, h2, etc, indican al navegador el contenido más importante de la página web, usualmente el logo o el nombre del sitio web
+- Solo debe de haber una etiqueta h1 por cada página (archivo html) del sitio web
+- Etiqueta img para mostrar imágenes, no tiene etiqueta de cierre, src="" indica la ruta dentro del proyecto
 
 ## Sitios web útiles
-- https://www.lipsum.com/
+- https://www.lipsum.com
+- https://tablericons.com
+- https://heroicons.com
+- https://fontawesome.com
