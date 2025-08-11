@@ -14,6 +14,15 @@ body {
 .titulo span {
     /* font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px */
     font-size: 2rem;/* rem tamaño relativo al documento*/
+    color: blue;
+}
+
+.titulo span {
+    color: red;
+}
+
+span {
+    color: green;
 }
 
 /* Tipos de selectores */
@@ -23,5 +32,8 @@ elemento {}/* selector de elementos; por ejemplo h1, p, span, etc. */
 [atributo="imagen.jpg"] {}/* selector de atributos */
 .clase1 .clase2 {}/* combinación de descendentes: selecciona los elementos hijos cuyo padre sea una clase o id en específico */
 .clase > elemento{}/* todos los hijos: aplica la regla a todos los elementos hijos de la clase o id en específico */
-/* las clases son reutilizables, recomendado usarlas para aplicar estilos */
-/* los id se recomiendan para código JavaScript y usarlos solo una vez por id */
+/*
+- las clases son reutilizables, recomendado usarlas para aplicar estilos
+- los id se recomiendan para código JavaScript y usarlos solo una vez por id
+- los estilos se aplican prioritariamente mientras más específico sea el selector y sin importar en cuál línea se haya declarado
+*/
