@@ -1,4 +1,17 @@
+/*** Hack para poder utilizar la medida rem de forma mucho mas facil ***/
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;/* 1 rem = 10px (con el hack) */
+}
+
 h1 {
-    text-align: center; /* alineación */
-    color: blue;
+    text-align: center;/* alineación */
+    font-size: 3.8rem;
+}
+
+span {
+    /* font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px */
+    font-size: 2rem;/* rem tamaño relativo al documento*/
 }

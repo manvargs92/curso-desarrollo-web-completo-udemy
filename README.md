@@ -19,3 +19,5 @@ Curso: Desarrollo Web Completo visto en Udemy
 - https://tablericons.com
 - https://heroicons.com
 - https://fontawesome.com
+- Cualquier calculadora de rems a px
+- https://www.w3schools.com
