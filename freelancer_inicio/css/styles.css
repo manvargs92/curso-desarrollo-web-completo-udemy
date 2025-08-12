@@ -2,7 +2,7 @@
     --blanco: #ffffff; /* los colores se definen en hexadecimal, rgb, hsl o nombre (blue, red, etc.) pero este último no es recomendable */
     --oscuro: #212121;
     --primario: #ffc107;
-    --secundario: ##0097a7;
+    --secundario: #0097a7;
     --gris: #757575;
 }
 
@@ -25,6 +25,26 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
 .titulo span {
     /* font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px */
     font-size: 2rem;/* rem tamaño relativo al documento*/
+}
+
+.contenedor {
+    width: 120rem;
+    /* centrar el contenido con márgenes */
+    /*margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    margin: 0 auto 0 auto;/* top right bottom left, definir el márgen en los cuatro lados pero con una sola línes de css */
+    margin: 0 auto;/* si solo hay dos valores: arriba/abajo izquierda/derecha */
+    /************************************/
+}
+
+.nav-background {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
 }
 
 /* Tipos de selectores */

@@ -22,17 +22,19 @@
 <body><!-- contenido de la página web -->
 
     <header>
-        <h1 class="titulo"><!-- class le signa un nombre de clase a la etiqueta para poder ser estilizada en css -->
+        <h1 class="titulo"><!-- class le signa un nombre de clase a la etiqueta para poder ser estilizada en css, pueden haber varias clases en el mismo atributo class -->
             Manuel Vargas <span>Freelancer</span><!-- span es útil para encerrar texto que se encuentra dentro de otra etiqueta, y así aplicarle estlo con css -->
         </h1><!-- h1 indica al navegador que ésta es la parte más importante, solo debería haber un h1 por archivo html -->
     </header>
 
-    <nav><!-- barra de navegación -->
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mí</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-background"><!-- div para utility class; no debe ir dentro de nav porque los hijos de nav deben ser enlaces-->
+        <nav class="navegacion-principal contenedor"><!-- barra de navegación -->
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mí</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
     <section><!-- si hay un heading, tiene que tener un <section> que lo rodee -->
         <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
