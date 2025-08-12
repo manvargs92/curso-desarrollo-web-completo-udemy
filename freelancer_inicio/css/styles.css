@@ -48,6 +48,10 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
     /* margin-top: 100px;/* aplica un margen hacia afuera del elemento, haciendo que se separe de otro elemento */
     /* padding-top: 100px;/* aplica un margen hacia adentro del elemento, haciendo que quede mas grande el elemento */
     padding: 1rem;/* aplica un padding en las 4 direcciones */
+    display: flex;/* habilita flexbox en el elmento */
+    justify-content: space-between;/* permite mover el contenido horizontalmente */
+    /* flex-direction: column;/* volver flexbox verical */
+    /* align-items: center;/* alinear los elementos de flexbox verical */
 }
 
 .navegacion-principal a {

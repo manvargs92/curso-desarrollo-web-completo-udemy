@@ -13,6 +13,11 @@ Curso: Desarrollo Web Completo visto en Udemy
 - Las etiquetas h1, h2, etc, indican al navegador el contenido más importante de la página web, usualmente el logo o el nombre del sitio web
 - Solo debe de haber una etiqueta h1 por cada página (archivo html) del sitio web
 - Etiqueta img para mostrar imágenes, no tiene etiqueta de cierre, src="" indica la ruta dentro del proyecto
+- Flexbox
+    - Especialmente diseñado para alinear los elementos
+    - Funciona de izquierda a derecha o de arriba hacia abajo, pero solamente en una dirección
+    - flex-direction: column    flexbox de arriba hacia abajo
+        - align-items   para alinear el flexbox verical
 
 ## Sitios web útiles
 - https://www.lipsum.com
