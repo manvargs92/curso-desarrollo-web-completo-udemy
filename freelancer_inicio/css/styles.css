@@ -45,6 +45,14 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
 }
 
 .navegacion-principal {
+    /* margin-top: 100px;/* aplica un margen hacia afuera del elemento, haciendo que se separe de otro elemento */
+    /* padding-top: 100px;/* aplica un margen hacia adentro del elemento, haciendo que quede mas grande el elemento */
+    padding: 1rem;/* aplica un padding en las 4 direcciones */
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;/* modifica la decoración del texto, en este caso, elimina el subrayado de los enlaces */
 }
 
 /* Tipos de selectores */
