@@ -34,13 +34,26 @@ Curso: Desarrollo Web Completo visto en Udemy
 .fondo-azul-200 {}
 .p-2 {}
 .m-2 {}
-    ```
+```
     - Módulos: defines una clase padre y vas seleccionando las etiquetas del html
 ```
 .card {}
 .card h2 {}
 .card img {}
 .card a {}
+```
+- Media queries estándard
+    - 480px para smartphones
+    - 768px para tablets
+    - 1140px para laptops o PCs
+    - 1400px para pantallas mas grandes
+- Crear snippets: Ctrl + Shift + P -> seleccionar lenguaje
+    - Ejemplo para CSS:
+```
+"Crear un Media Query": {
+    "prefix" : "mq",
+    "body" : "@media (min-width: $1) {\n    $2\n}"
+}
 ```
 
 ## Sitios web útiles

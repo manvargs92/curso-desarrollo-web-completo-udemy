@@ -66,6 +66,18 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
     color: var(--oscuro);
 }
 
+@media (min-width: 480px) {
+    h1 {
+
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        
+    }
+}
+
 /* Tipos de selectores */
 /*elemento {}/* selector de elementos; por ejemplo h1, p, span, etc. */
 /*.clase {}/* selector de clases, .nombre-de-la-clase */
