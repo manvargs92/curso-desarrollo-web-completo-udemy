@@ -10,14 +10,16 @@
 html {
     font-size: 62.5%;
 }
-body {
+body {/* las propiedades que se coloquen dentro de este selector se aplican a todo el documento */
     font-size: 16px;/* 1 rem = 10px (con el hack) */
+    font-family: "Krub", sans-serif;/* asignar fuente al texto */
 }
 
 .titulo {
     text-align: center;/* alineación */
     font-size: 3.8rem;
-    color: var(--primario);
+    /* color: var(--primario);/* agregar color a texto */
+    /* font-weight: 400;/* 400 = normal; 700 = bold */
 }
 
 .titulo span {
