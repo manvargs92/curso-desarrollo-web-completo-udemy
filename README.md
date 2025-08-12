@@ -18,6 +18,30 @@ Curso: Desarrollo Web Completo visto en Udemy
     - Funciona de izquierda a derecha o de arriba hacia abajo, pero solamente en una dirección
     - flex-direction: column    flexbox de arriba hacia abajo
         - align-items   para alinear el flexbox verical
+- Estilos para escribir CSS:
+    - BEM (Bloques, Elementos, Modificadores)
+```
+.card {}
+.card__titulo {}
+.card__imagen {}
+.card__boton {}
+.card__boton--activo {}
+```
+    - Utility First: crear clases con una sola propiedad que describe lo que hace
+```
+.texto-centrado {}
+.color-rojo-100 {}
+.fondo-azul-200 {}
+.p-2 {}
+.m-2 {}
+    ```
+    - Módulos: defines una clase padre y vas seleccionando las etiquetas del html
+```
+.card {}
+.card h2 {}
+.card img {}
+.card a {}
+```
 
 ## Sitios web útiles
 - https://www.lipsum.com
