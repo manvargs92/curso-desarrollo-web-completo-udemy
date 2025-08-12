@@ -22,3 +22,4 @@ Curso: Desarrollo Web Completo visto en Udemy
 - Cualquier calculadora de rems a px
 - https://www.w3schools.com
 - https://fonts.google.com
+- https://necolas.github.io/normalize.css/
