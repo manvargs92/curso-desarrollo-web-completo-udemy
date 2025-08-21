@@ -28,7 +28,8 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
 }
 
 .contenedor {
-    width: 120rem;
+    /* width: 120rem; */
+    max-width: 120rem;/* toma la cantidad rem, px como máximo y solo si hay ese espacio disponible, si no, toma el 100% del ancho */
     /* centrar el contenido con márgenes */
     /*margin-top: 0;
     margin-right: auto;
@@ -47,35 +48,30 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
 .navegacion-principal {
     /* margin-top: 100px;/* aplica un margen hacia afuera del elemento, haciendo que se separe de otro elemento */
     /* padding-top: 100px;/* aplica un margen hacia adentro del elemento, haciendo que quede mas grande el elemento */
-    display: flex;/* habilita flexbox en el elmento */
-    justify-content: space-between;/* permite mover el contenido horizontalmente */
-    /* flex-direction: column;/* volver flexbox verical */
-    /* align-items: center;/* alinear los elementos de flexbox verical */
+    display: flex;/* habilita flexbox en el elmento; block: los elementos irán uno de bajo del otro; inline: los elementos irán uno al lado del otro */
+    flex-direction: column;/* volver flexbox verical */
+    /*align-items: center;/* alinear los elementos de flexbox verical */
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;/* permite mover el contenido horizontalmente */
+    }
 }
 
 .navegacion-principal a {
     color: var(--blanco);
     text-decoration: none;/* modifica la decoración del texto, en este caso, elimina el subrayado de los enlaces */
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 700; /* 700 = bold*/
     padding: 1rem;/* aplica un padding en las 4 direcciones */
+    display: block;
 }
 
 .navegacion-principal a:hover {/* :hover pseudoclase para insertar efectos */
     background-color: var(--primario);
     color: var(--oscuro);
-}
-
-@media (min-width: 480px) {
-    h1 {
-
-    }
-}
-
-@media (min-width: 768px) {
-    h1 {
-        
-    }
 }
 
 /* Tipos de selectores */
