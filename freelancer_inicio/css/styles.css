@@ -74,6 +74,12 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
     color: var(--oscuro);
 }
 
+.hero {
+    background-image: url(../imgs/hero.jpg);/* añadir una imágen como fondo*/
+    background-repeat: no-repeat;/* evita que se repita laimagen en el espacio que quede vacío*/
+    background-size: cover;/* ajusta la imagen para que abarque todo el espacio y no quede espacio vacío*/
+}
+
 /* Tipos de selectores */
 /*elemento {}/* selector de elementos; por ejemplo h1, p, span, etc. */
 /*.clase {}/* selector de clases, .nombre-de-la-clase */
