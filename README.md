@@ -23,7 +23,11 @@ Curso: Desarrollo Web Completo visto en Udemy
 - CSS Grid
     - El contenido se agrupa dentro de un área definida
     - Acceso a dos dimensiones
-
+- ¿Cuándo usar Flexbox y cuándo CSS Grid?
+    - Utiliza Flexbox:
+        - Para la alineación o distribución de los elementos que estarán dentro de contenedores
+    - Utiliza CSS Grid.
+        - Para definir el layout del sitio web, como pueden ser las columnas o contenedores de elementos
 - Estilos para escribir CSS:
     - BEM (Bloques, Elementos, Modificadores)
 ```
