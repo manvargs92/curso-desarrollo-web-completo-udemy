@@ -61,6 +61,15 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
     }
 }
 
+.sombra {
+    box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.54);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 /*    Tipografía    */
 h1 {
     font-size: 3.8rem;
@@ -131,6 +140,7 @@ h1, h2, h3 {
     background-size: cover;/* ajusta la imagen para que abarque todo el espacio y no quede espacio vacío*/
     height: 450px;
     position: relative; /* el elemento padre siempre debe tener posición relativa para que el hijo pueda tener posición absoluta */
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {

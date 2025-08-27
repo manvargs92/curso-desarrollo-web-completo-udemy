@@ -73,3 +73,5 @@ Curso: Desarrollo Web Completo visto en Udemy
 - https://necolas.github.io/normalize.css/
 - https://responsively.app
 - https://www.paulirish.com/2012/box-sizing-border-box-ftw/         Box Model fix de Paul Irish
+- https://cssgenerator.org/box-shadow-css-generator.html            Reemplaza a cssmatic.com
+- https://caniuse.com/
