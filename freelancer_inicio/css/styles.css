@@ -64,6 +64,26 @@ h1, h2, h3 {
     /************************************/
 }
 
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase; /* transforma el texto en todas las letras mayúsculas */
+    font-weight: 700;
+    border-radius: .5rem; /* rendondea los bordes */
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto; /* auto para que se reinicie el tamaño por defecto */
+    }
+}
+
 .nav-background {
     background-color: var(--secundario);
 }
@@ -90,6 +110,7 @@ h1, h2, h3 {
     font-weight: 700; /* 700 = bold*/
     padding: 1rem;/* aplica un padding en las 4 direcciones */
     display: block;
+    text-align: center;
 }
 
 .navegacion-principal a:hover {/* :hover pseudoclase para insertar efectos */
