@@ -56,6 +56,11 @@ Curso: Desarrollo Web Completo visto en Udemy
 }
 ```
 
+- Selector *: selecciona todos los elementos del HTML
+- Selector :before: hace que el contenido "no exista" en el html ya que forma parte de un pseudoelemento 
+- Selector :after: hace que el contenido "no exista" en el html ya que forma parte de un pseudoelemento 
+- Selector ,: aplica las mismas reglas a varios selectores diferentes, para no repetir código. Ejemplo: .titulo, .subtitulo, .contenedor {}
+
 ## Sitios web útiles
 - https://www.lipsum.com
 - https://tablericons.com
@@ -66,3 +71,4 @@ Curso: Desarrollo Web Completo visto en Udemy
 - https://fonts.google.com
 - https://necolas.github.io/normalize.css/
 - https://responsively.app
+- https://www.paulirish.com/2012/box-sizing-border-box-ftw/         Box Model fix de Paul Irish

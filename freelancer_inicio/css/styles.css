@@ -9,11 +9,20 @@
 /*** Hack para poder utilizar la medida rem de forma mucho mas facil ***/
 html {
     font-size: 62.5%;
+/* sippet para deshacernos del boxmodel */
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/****************************************/
+
 body {/* las propiedades que se coloquen dentro de este selector se aplican a todo el documento */
     font-size: 16px;/* 1 rem = 10px (con el hack) */
     font-family: "Krub", sans-serif;/* asignar fuente al texto */
 }
+/***********************************************************************/
 
 .titulo {
     text-align: center;/* alineación */
@@ -78,6 +87,8 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
     background-image: url(../imgs/hero.jpg);/* añadir una imágen como fondo*/
     background-repeat: no-repeat;/* evita que se repita laimagen en el espacio que quede vacío*/
     background-size: cover;/* ajusta la imagen para que abarque todo el espacio y no quede espacio vacío*/
+    height: 450px;
+    padding: 20px;
 }
 
 /* Tipos de selectores */
