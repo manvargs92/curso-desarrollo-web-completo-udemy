@@ -6,6 +6,7 @@
     --gris: #757575;
 }
 
+/*    Globales    */
 /*** Hack para poder utilizar la medida rem de forma mucho mas facil ***/
 html {
     font-size: 62.5%;
@@ -23,32 +24,6 @@ body {/* las propiedades que se coloquen dentro de este selector se aplican a to
     font-family: "Krub", sans-serif;/* asignar fuente al texto */
 }
 /***********************************************************************/
-
-h1 {
-    font-size: 3.8rem;
-}
-
-h2 {
-    font-size: 2.8rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-h1, h2, h3 {
-    text-align: center;/* alineación */
-}
-
-/* .titulo {
-    color: var(--primario);/* agregar color a texto
-    font-weight: 400;/* 400 = normal; 700 = bold
-} */
-
-.titulo span {
-    /* font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px */
-    font-size: 2rem;/* rem tamaño relativo al documento*/
-}
 
 .contenedor {
     /* width: 120rem; */
@@ -84,6 +59,35 @@ h1, h2, h3 {
     }
 }
 
+/*    Tipografía    */
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;/* alineación */
+}
+
+/*    Títulos    */
+/* .titulo {
+    color: var(--primario);/* agregar color a texto
+    font-weight: 400;/* 400 = normal; 700 = bold
+} */
+
+.titulo span {
+    /* font-size: 20px;/* pixeles de la pantalla, ya no es recomendable usar esta medida en px */
+    font-size: 2rem;/* rem tamaño relativo al documento*/
+}
+
+/*    Navegación principal*/
 .nav-background {
     background-color: var(--secundario);
 }
@@ -118,6 +122,7 @@ h1, h2, h3 {
     color: var(--oscuro);
 }
 
+/*    Hero    */
 .hero {
     background-image: url(../imgs/hero.jpg);/* añadir una imágen como fondo*/
     background-repeat: no-repeat;/* evita que se repita laimagen en el espacio que quede vacío*/
@@ -152,7 +157,7 @@ h1, h2, h3 {
     color: var(--blanco);
 }
 
-.ubicacion {
+.contenido-hero .ubicacion {
     display: flex;
     align-items: flex-end;
 }
