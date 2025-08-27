@@ -4,6 +4,7 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
+    --gris-claro: #dfe9f3;
 }
 
 /*    Globales    */
@@ -22,6 +23,7 @@ html {
 body {/* las propiedades que se coloquen dentro de este selector se aplican a todo el documento */
     font-size: 16px;/* 1 rem = 10px (con el hack) */
     font-family: "Krub", sans-serif;/* asignar fuente al texto */
+    background-image: linear-gradient(to top, var(--gris-claro) 0%, var(--blanco) 100%);/* acceder a los degradados o colocar imágenes */
 }
 /***********************************************************************/
 
