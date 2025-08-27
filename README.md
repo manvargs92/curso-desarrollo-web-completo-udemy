@@ -15,10 +15,15 @@ Curso: Desarrollo Web Completo visto en Udemy
 - Etiqueta img para mostrar imágenes, no tiene etiqueta de cierre, src="" indica la ruta dentro del proyecto
 - Flexbox
     - Especialmente diseñado para alinear los elementos
-    - Funciona de izquierda a derecha o de arriba hacia abajo, pero solamente en una dirección
+    - El contenido crece automáticamente
+    - Acceso a una sola dimensión: funciona de izquierda a derecha o de arriba hacia abajo, pero solamente en una dirección
         - justify-content: para alienar horizontalmente
     - flex-direction: column    flexbox de arriba hacia abajo (vertical)
         - align-items: para alienar verticalmente
+- CSS Grid
+    - El contenido se agrupa dentro de un área definida
+    - Acceso a dos dimensiones
+
 - Estilos para escribir CSS:
     - BEM (Bloques, Elementos, Modificadores)
 ```
