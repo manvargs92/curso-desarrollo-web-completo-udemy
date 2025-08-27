@@ -16,8 +16,9 @@ Curso: Desarrollo Web Completo visto en Udemy
 - Flexbox
     - Especialmente diseñado para alinear los elementos
     - Funciona de izquierda a derecha o de arriba hacia abajo, pero solamente en una dirección
-    - flex-direction: column    flexbox de arriba hacia abajo
-        - align-items   para alinear el flexbox verical
+        - justify-content: para alienar horizontalmente
+    - flex-direction: column    flexbox de arriba hacia abajo (vertical)
+        - align-items: para alienar verticalmente
 - Estilos para escribir CSS:
     - BEM (Bloques, Elementos, Modificadores)
 ```
